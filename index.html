@@ -4,7 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lesson Landing Page</title>
-        <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Sen:wght@700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
@@ -37,7 +42,8 @@
                 </nav>
             </div>
         </header>
-        <main>
+        <main style="height: 2000px">
+            <!-- Begin hero -->
             <div class="hero">
                 <div class="content hero__content">
                     <div class="img__block">
@@ -48,21 +54,33 @@
                         />
                         <div class="info-course">
                             <div class="row">
-                                <i class="icon"><img src="./assets/img/uiux-icon.svg" alt="UI/UX Design"></i>
+                                <i class="icon"
+                                    ><img
+                                        src="./assets/img/uiux-icon.svg"
+                                        alt="UI/UX Design"
+                                /></i>
                                 <div class="info-crs__wrap">
                                     <span class="qty">20 Courses</span>
                                     <strong class="course">UI/UX Design</strong>
                                 </div>
                             </div>
                             <div class="row">
-                                <i class="icon"><img src="./assets/img/dev-icon.svg" alt="Development"></i>
+                                <i class="icon"
+                                    ><img
+                                        src="./assets/img/dev-icon.svg"
+                                        alt="Development"
+                                /></i>
                                 <div class="info-crs__wrap">
                                     <span class="qty">20 Courses</span>
                                     <strong class="course">Development</strong>
                                 </div>
                             </div>
                             <div class="row">
-                                <i class="icon"><img src="./assets/img/mrk-icon.svg" alt="Marketing"></i>
+                                <i class="icon"
+                                    ><img
+                                        src="./assets/img/mrk-icon.svg"
+                                        alt="Marketing"
+                                /></i>
                                 <div class="info-crs__wrap">
                                     <span class="qty">30 Courses</span>
                                     <strong class="course">Marketing</strong>
@@ -80,10 +98,15 @@
                             world-class universities and companies.
                         </p>
                         <div class="intro">
-                            <a href="#!" class="btn btn--yellow btn__intro">See Courses</a>
-                            <a href="#!" class="play__icon"><img src="./assets/img/play-video.svg" alt="Watch Video" ></a>
-                            <a href="#!" class="intro__link" >Watch Video</a>
-                
+                            <a href="#!" class="btn btn--yellow btn__intro"
+                                >See Courses</a
+                            >
+                            <a href="#!" class="play__icon"
+                                ><img
+                                    src="./assets/img/play-video.svg"
+                                    alt="Watch Video"
+                            /></a>
+                            <a href="#!" class="intro__link">Watch Video</a>
                         </div>
                         <p class="desc__achievement">Recent engagement</p>
                         <div class="achievement">
@@ -93,6 +116,126 @@
                         <div class="achievement">
                             <strong class="qty">70+</strong>
                             <span class="type">Courses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Begin courses -->
+            <div class="courses">
+                <div class="content">
+                    <h2 class="sub-title">Our popular courses</h2>
+                    <div class="row">
+                        <p class="sub-title__desc">
+                            Build new skills with new trendy courses and shine
+                            for the next future career.
+                        </p>
+                        <div class="control">
+                            <a href="">
+                                <img
+                                    src="./assets/img/control-left.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                            </a>
+                            <a href="">
+                                <img
+                                    src="./assets/img/control-right.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row courses__wrap">
+                        <div class="col">
+                            <img
+                                src="./assets/img/courses-01.jpeg"
+                                alt=""
+                                class="images"
+                            />
+                            <div class="info__wrap">
+                                <div class="row">
+                                    <h3 class="courses__name">
+                                        Basic web design
+                                    </h3>
+                                    <div class="rate">
+                                        <img
+                                            src="./assets/img/Star.svg"
+                                            alt="Star"
+                                            class="icon"
+                                        />
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                                <p class="courses__desc">
+                                    Get the best course, gain knowledge and
+                                    shine for your future career.
+                                </p>
+                                <div class="row row__bottom">
+                                    <span class="courses__price">$120.75</span>
+                                    <a href="#!" class="btn btn--yellow"
+                                        >Book Now</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img
+                                src="./assets/img/courses-02.jpeg"
+                                alt="UI/UX design"
+                                class="images"
+                            />
+                            <div class="info__wrap">
+                                <div class="row">
+                                    <h3 class="courses__name">UI/UX design</h3>
+                                    <div class="rate">
+                                        <img
+                                            src="./assets/img/Star.svg"
+                                            alt="Star"
+                                            class="icon"
+                                        />
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                                <p class="courses__desc">
+                                    Get the best course, gain knowledge and
+                                    shine for your future career.
+                                </p>
+                                <div class="row row__bottom">
+                                    <span class="courses__price">$120.75</span>
+                                    <a href="#!" class="btn">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img
+                                src="./assets/img/courses-03.jpeg"
+                                alt="Web App design"
+                                class="images"
+                            />
+                            <div class="info__wrap">
+                                <div class="row">
+                                    <h3 class="courses__name">
+                                        Web App design
+                                    </h3>
+                                    <div class="rate">
+                                        <img
+                                            src="./assets/img/Star.svg"
+                                            alt="Star"
+                                            class="icon"
+                                        />
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                                <p class="courses__desc">
+                                    Get the best course, gain knowledge and
+                                    shine for your future career.
+                                </p>
+                                <div class="row row__bottom">
+                                    <span class="courses__price">$120.75</span>
+                                    <a href="#!" class="btn">Book Now</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

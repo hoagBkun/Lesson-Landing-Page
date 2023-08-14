@@ -46,8 +46,11 @@ a {
 
 /* header */
 .header {
-    padding-top: 44px;
+    padding-top: 36px;
     background: #fffcf4;
+    top: 0;
+    position: sticky;
+    z-index: 1;
 }
 
 .content {
@@ -101,9 +104,11 @@ a {
     min-width: 144px;
 }
 
+/* Begin hero */
 .hero {
     background: #fffcf4;
     height: calc(100vh - 94px);
+    padding-bottom: 65px;
 }
 
 .hero__content {
@@ -181,7 +186,7 @@ a {
 .hero .info__title {
     color: #171100;
     font-size: 5.8rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.17;
     letter-spacing: -1px;
 }
@@ -249,8 +254,101 @@ a {
 }
 
 .achievement .type {
-    color: #5F5B53;
+    color: #5f5b53;
     font-size: 1.8rem;
     font-weight: 400;
     margin-left: 12px;
+}
+
+/* Courses */
+
+.courses {
+    padding: 200px 0;
+    height: 100vh;
+}
+
+.courses .sub-title {
+    color: #171100;
+    font-size: 3.8rem;
+    font-weight: 400;
+    line-height: 1.263; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.courses .sub-title__desc {
+    margin-top: 18px;
+    width: 458px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+}
+
+.courses .control {
+    margin-left: auto;
+}
+
+.courses .control a:last-child {
+    margin-left: 18px;
+}
+
+.courses__wrap {
+    margin-top: 55px;
+    gap: 30px;
+}
+
+.courses__wrap .col {
+    flex: 1;
+    border-radius: 12px;
+    border: 1px solid #e2dfda;
+    background: #fff;
+}
+
+.courses__wrap .images {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.courses .info__wrap {
+    padding: 16px 22px 22px;
+}
+
+.courses .info__wrap .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses__name {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+
+.courses .info__wrap .rate {
+    color: #fea31b;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.courses__desc {
+    margin-top: 6px;
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 175% */
+}
+
+.courses__price {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+
+.courses .info__wrap .row__bottom {
+    margin-top: 12px;
 }
