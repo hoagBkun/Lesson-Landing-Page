@@ -352,3 +352,74 @@ a {
 .courses .info__wrap .row__bottom {
     margin-top: 12px;
 }
+
+.quote {
+    background: #2e2100;
+    height: 380px;
+}
+
+.author {
+    margin: 96px;
+}
+
+.author__avt {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author__name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: "Sen", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41; /* 141.667% */
+}
+
+.author__job {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.icon__wrap {
+    margin-top: 28px;
+    display: flex;
+    gap: 6px;
+}
+
+.icon__wrap .icon {
+    width: 6px;
+    height: 6px;
+    background: #634700;
+    border-radius: 50%;
+}
+
+.icon__wrap .icon--active {
+    background: #ffb900;
+}
+
+.quote__wrap {
+    position: relative;
+    margin-top: 124px;
+    margin-left: auto;
+    width: 740px;
+}
+
+.quote__content {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53; /* 153.846% */
+}
+
+.quote__wrap .icon {
+    position: absolute;
+    top: -28px;
+    left: -30px;
+}
