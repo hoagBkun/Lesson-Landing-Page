@@ -354,6 +354,7 @@ a {
 }
 
 .quote {
+    margin-top: 200px;
     background: #2e2100;
     height: 380px;
 }
