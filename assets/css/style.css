@@ -22,6 +22,7 @@ a {
 }
 
 .btn {
+    display: inline-block;
     min-width: 118px;
     border-radius: 24.5px;
     background: #171100;
@@ -44,13 +45,28 @@ a {
     display: flex;
 }
 
+.sub-title {
+    color: #171100;
+    font-size: 3.8rem;
+    font-weight: 400;
+    line-height: 1.263; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.desc {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.666; /* 166.667% */
+}
+
 /* header */
 .header {
     padding-top: 36px;
     background: #fffcf4;
-    top: 0;
+    /* top: 0;
     position: sticky;
-    z-index: 1;
+    z-index: 1; */
 }
 
 .content {
@@ -115,7 +131,7 @@ a {
     display: flex;
 }
 
-.img__block {
+.hero .img__block {
     width: 48.75%;
     margin-top: 64px;
     margin-right: auto;
@@ -186,17 +202,13 @@ a {
 .hero .info__title {
     color: #171100;
     font-size: 5.8rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.17;
-    letter-spacing: -1px;
+    letter-spacing: -1.16px;
 }
 
 .hero .info__desc {
     margin-top: 22px;
-    color: #5f5b53;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.666; /* 166.667% */
 }
 
 .hero .intro {
@@ -235,10 +247,6 @@ a {
 
 .desc__achievement {
     margin-top: 48px;
-    color: #5f5b53;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.66; /* 166.667% */
 }
 
 .achievement {
@@ -249,8 +257,9 @@ a {
 
 .achievement .qty {
     color: #171100;
+    font-family: "Sen", sans-serif;
     font-size: 4.4rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .achievement .type {
@@ -264,25 +273,10 @@ a {
 
 .courses {
     padding: 200px 0;
-    height: 100vh;
-}
-
-.courses .sub-title {
-    color: #171100;
-    font-size: 3.8rem;
-    font-weight: 400;
-    line-height: 1.263; /* 126.316% */
-    letter-spacing: -0.76px;
 }
 
 .courses .sub-title__desc {
     margin-top: 18px;
-    width: 458px;
-    color: #5f5b53;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.66; /* 166.667% */
 }
 
 .courses .control {
@@ -293,19 +287,32 @@ a {
     margin-left: 18px;
 }
 
-.courses__wrap {
+.courses__wrap,
+.blog__wrap {
     margin-top: 55px;
     gap: 30px;
 }
 
-.courses__wrap .col {
+.courses__wrap .col,
+.blog__wrap .col {
     flex: 1;
     border-radius: 12px;
     border: 1px solid #e2dfda;
     background: #fff;
 }
 
-.courses__wrap .images {
+.courses__wrap .col:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.courses__wrap .images:hover,
+.blog__wrap .images:hover {
+    opacity: 0.9;
+}
+
+.courses__wrap .images,
+.blog__wrap .images {
     width: 100%;
     height: 278px;
     object-fit: cover;
@@ -336,10 +343,9 @@ a {
 
 .courses__desc {
     margin-top: 6px;
-    color: #5f5b53;
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 1.85; /* 175% */
+    line-height: 1.85; /* 185.714% */
 }
 
 .courses__price {
@@ -354,7 +360,6 @@ a {
 }
 
 .quote {
-    margin-top: 200px;
     background: #2e2100;
     height: 380px;
 }
@@ -423,4 +428,206 @@ a {
     position: absolute;
     top: -28px;
     left: -30px;
+}
+
+/* Result */
+
+.result {
+    padding: 200px 0;
+}
+
+.result .row {
+    justify-content: space-between;
+    gap: 130px;
+}
+
+.result .row:last-child {
+    margin-top: 200px;
+    flex-direction: row-reverse;
+}
+
+.result .img__block {
+    display: flex;
+    width: 48.75%;
+    height: 438px;
+    gap: 30px;
+}
+
+.result .img__block .images:first-child {
+    margin-top: auto;
+}
+
+.result .img__block .images:last-child {
+    height: 440px;
+}
+
+.result .img__block .images {
+    flex: 1;
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.result__info {
+    max-width: 570px;
+    margin-top: 58px;
+}
+
+.result__info .result-desc,
+.result__info .date-report {
+    margin-top: 16px;
+}
+
+.result__info .btn {
+    margin-top: 32px;
+    min-width: 137px;
+}
+
+/* Blog */
+
+.blog {
+    padding: 96px 0;
+    background: #fffcf4;
+}
+
+.blog .row__first {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.blog .row__first .desc {
+    width: 448px;
+}
+
+.blog__wrap .col {
+    border: none;
+}
+
+.blog__wrap .col:hover {
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+.blog__wrap .info__wrap {
+    padding: 20px 20px 28px;
+}
+
+.blog__wrap .date {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.blog__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -12px;
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #e2dfda;
+}
+
+.blog__title {
+    margin-top: 25px;
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    position: relative;
+}
+
+.blog__wrap .btn {
+    margin-top: 12px;
+}
+
+.blog .icon__wrap {
+    margin-top: 38px;
+    justify-content: center;
+}
+
+/* Footer */
+
+.footer {
+    background: #2e2100;
+    padding: 96px 0 28px;
+}
+
+.footer .conclusion {
+    margin-top: 18px;
+    width: 267px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer .social {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.footer .title {
+    position: relative;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.footer .title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+}
+
+.footer .list {
+    margin-top: 43px;
+}
+
+.footer .item a {
+    margin-top: 12px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer .item b {
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer .row {
+    justify-content: space-between;
+}
+
+.footer .list:last-child {
+    width: 231px;
+}
+
+.seperate {
+    margin: 38px auto 28px;
+    width: 1170px;
+    height: 1px;
+    background: #59554b;
+}
+
+.copyright {
+    color: #807d74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
 }
